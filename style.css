@@ -125,3 +125,5 @@ footer a { color: var(--secondary); }
 .fine { color: var(--secondary); font-size: 14px; margin: 14px 0 0; }
 @media (max-width: 760px) { .advisor { grid-template-columns: 1fr; } .advisor img { width: 120px; } }
 .advisor ul { list-style: none; margin: 0; padding: 0; }
+.tag { display: inline-block; background: var(--accent); color: var(--bg); font-weight: 700; font-size: 14px; border-radius: 999px; padding: 4px 12px; margin-bottom: 10px; }
+.math { background: var(--accent-soft); border-radius: 14px; padding: 14px 16px; margin: 0 0 22px; font-size: 16px; }

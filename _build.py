@@ -49,7 +49,9 @@ T = {
             ('Советник', 'пошаговый план: подушка, долги, накопления'),
         ],
         'adv_h': 'Помощник, который считает за вас',
-        'adv_sub': 'Слон разбирает каждую трату и подсказывает, что делать дальше: отложить, накопить, закрыть долг. Без таблиц и формул.',
+        'adv_tag': 'Не ИИ — финансовая математика',
+        'adv_sub': 'Слон разбирает каждую трату и подсказывает, что делать дальше: отложить, накопить, закрыть долг.',
+        'adv_math': 'Под капотом не нейросеть, которая может выдумать цифру, а расчётная модель из практики финансового планирования: обязательные расходы, норма сбережений, долговая нагрузка, метод «лавины» для досрочного погашения. Каждая цифра считается по вашим данным, и видно, откуда она взялась. Одни и те же данные — всегда один и тот же ответ.',
         'adv': [
             ('Сколько можно тратить до зарплаты', 'с учётом обязательных расходов, платежей по кредитам и денег, отложенных на цели'),
             ('Где утекают деньги', 'находит мелкие частые траты — кофе, доставку, такси, — которые за год складываются в сотни тысяч'),
@@ -136,7 +138,9 @@ T = {
             ('Advisor', 'a step-by-step plan: safety net, debts, savings'),
         ],
         'adv_h': 'An assistant that does the math for you',
-        'adv_sub': 'The elephant goes through every expense and tells you what to do next: set money aside, save up, pay off a debt. No spreadsheets, no formulas.',
+        'adv_tag': 'Not AI — real financial math',
+        'adv_sub': 'The elephant goes through every expense and tells you what to do next: set money aside, save up, pay off a debt.',
+        'adv_math': 'Under the hood is not a neural network that might make up a number, but a calculation model from financial planning practice: essential costs, savings rate, debt load, the “avalanche” method for early repayment. Every figure is computed from your data, and you can see where it came from. Same data — always the same answer.',
         'adv': [
             ('How much you can spend until payday', 'after essential costs, loan payments and money set aside for goals'),
             ('Where money leaks', 'spots small frequent expenses — coffee, delivery, taxis — that add up to a fortune over a year'),
@@ -223,7 +227,9 @@ T = {
             ('Кеңесші', 'қадамдық жоспар: қор, қарыздар, жинақ'),
         ],
         'adv_h': 'Сіз үшін есептейтін көмекші',
-        'adv_sub': 'Піл әр шығынды талдап, әрі қарай не істеу керегін айтады: бөліп қою, жинау, қарызды жабу. Кестесіз, формуласыз.',
+        'adv_tag': 'ЖИ емес — қаржы математикасы',
+        'adv_sub': 'Піл әр шығынды талдап, әрі қарай не істеу керегін айтады: бөліп қою, жинау, қарызды жабу.',
+        'adv_math': 'Ішінде санды ойдан шығаруы мүмкін нейрожелі емес, қаржылық жоспарлау тәжірибесіндегі есептеу моделі: міндетті шығыстар, жинақ нормасы, қарыз жүктемесі, мерзімінен бұрын өтеудің «көшкін» әдісі. Әр сан сіздің деректеріңіз бойынша есептеледі және оның қайдан шыққаны көрінеді. Деректер бірдей болса — жауап әрқашан бірдей.',
         'adv': [
             ('Жалақыға дейін қанша жұмсауға болады', 'міндетті шығыстарды, несие төлемдерін және мақсаттарға бөлінген ақшаны ескеріп'),
             ('Ақша қайда ағып кетеді', 'кофе, жеткізу, такси сияқты ұсақ жиі шығындарды табады — жылына олар жүздеген мыңға жиналады'),
@@ -364,7 +370,9 @@ def home(lang):
 <section class="card advisor">
   <img src="{BASE}assets/party.png" alt="" width="150">
   <div>
+    <span class="tag">{t['adv_tag']}</span>
     <h2>{t['adv_h']}</h2><p class="sub">{t['adv_sub']}</p>
+    <p class="math">{t['adv_math']}</p>
     <ul class="pro">{adv}</ul>
     <p class="fine">{t['adv_note']}</p>
   </div>
