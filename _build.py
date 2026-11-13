@@ -53,7 +53,7 @@ T = {
             ('Когда приложение выходит в интернет', '<ul>'
                 '<li><b>Курсы валют.</b> Приложение загружает официальные курсы с сайта Национального банка Казахстана (nationalbank.kz). Ваши данные при этом не передаются.</li>'
                 '<li><b>Чеки по QR.</b> Когда вы сканируете чек, его реквизиты из QR-кода (номер кассы, номер чека, дата, сумма) отправляются оператору фискальных данных, выдавшему чек, чтобы получить список покупок. Больше ничего не передаётся.</li>'
-                '<li><b>Чтение PDF-выписок.</b> Выписки разбираются на телефоне. Для этого может загружаться библиотека чтения PDF; сама выписка никуда не отправляется.</li>'
+                '<li><b>PDF-выписки.</b> Выписки разбираются прямо на телефоне и никуда не отправляются.</li>'
                 '<li><b>Покупки.</b> Оплату Pro обрабатывает Apple. Для проверки подписки используется сервис RevenueCat: он получает анонимный идентификатор покупки и сведения о ней от Apple, но не ваши финансовые данные, имя или почту.</li>'
                 '</ul>'),
             ('Резервные копии', '<p>Копии создаются по вашей команде и автоматически — в папке приложения на телефоне. Файл копии вы можете сохранить куда угодно через меню «Поделиться». Если задан пароль, копия шифруется (AES-256), а пароль хранится в защищённом хранилище iOS (Keychain). Без пароля зашифрованную копию открыть нельзя — в том числе разработчику.</p>'),
@@ -121,7 +121,7 @@ T = {
             ('When the app goes online', '<ul>'
                 '<li><b>Exchange rates.</b> The app downloads official rates from the National Bank of Kazakhstan (nationalbank.kz). None of your data is sent.</li>'
                 '<li><b>QR receipts.</b> When you scan a receipt, the details from its QR code (cash register number, receipt number, date, amount) are sent to the fiscal data operator that issued it, to get the list of purchases. Nothing else is sent.</li>'
-                '<li><b>Reading PDF statements.</b> Statements are processed on the phone. A PDF-reading library may be downloaded for this; the statement itself is never sent anywhere.</li>'
+                '<li><b>PDF statements.</b> Statements are processed right on the phone and never sent anywhere.</li>'
                 '<li><b>Purchases.</b> Pro payments are processed by Apple. Subscription status is checked with RevenueCat, which receives an anonymous purchase ID and purchase details from Apple — not your financial data, name or email.</li>'
                 '</ul>'),
             ('Backups', '<p>Backups are created on request and automatically, in the app folder on your phone. You can save a backup file anywhere via the Share menu. If you set a password, the backup is encrypted (AES-256) and the password is kept in the iOS Keychain. An encrypted backup cannot be opened without the password — including by the developer.</p>'),
@@ -189,7 +189,7 @@ T = {
             ('Қосымша қашан интернетке шығады', '<ul>'
                 '<li><b>Валюта бағамдары.</b> Қосымша ресми бағамдарды Қазақстан Ұлттық банкінің сайтынан (nationalbank.kz) жүктейді. Сіздің деректеріңіз жіберілмейді.</li>'
                 '<li><b>QR-чектер.</b> Чекті сканерлегенде QR-кодтағы деректемелер (касса нөмірі, чек нөмірі, күні, сомасы) сатып алулар тізімін алу үшін чекті берген фискалдық деректер операторына жіберіледі. Басқа ештеңе жіберілмейді.</li>'
-                '<li><b>PDF-үзінділерді оқу.</b> Үзінділер телефонда өңделеді. Ол үшін PDF оқитын кітапхана жүктелуі мүмкін; үзіндінің өзі ешқайда жіберілмейді.</li>'
+                '<li><b>PDF-үзінділер.</b> Үзінділер телефонның өзінде өңделеді және ешқайда жіберілмейді.</li>'
                 '<li><b>Сатып алулар.</b> Pro төлемін Apple өңдейді. Жазылымды тексеру үшін RevenueCat қызметі қолданылады: ол Apple-дан сатып алудың анонимді идентификаторы мен мәліметтерін алады, бірақ қаржы деректеріңізді, атыңызды немесе поштаңызды алмайды.</li>'
                 '</ul>'),
             ('Сақтық көшірмелер', '<p>Көшірмелер сіздің пәрменіңізбен және автоматты түрде телефондағы қосымша қалтасында жасалады. Көшірме файлын «Бөлісу» мәзірі арқылы кез келген жерге сақтай аласыз. Құпиясөз орнатылса, көшірме шифрланады (AES-256), ал құпиясөз iOS қорғалған қоймасында (Keychain) сақталады. Шифрланған көшірмені құпиясөзсіз ешкім аша алмайды — әзірлеуші де.</p>'),
