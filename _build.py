@@ -14,6 +14,7 @@ ICONS = {
     'doc': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>',
     'mic': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>',
     'spark': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg>',
+    'bell': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>',
     'lock': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
 }
 
@@ -33,7 +34,7 @@ T = {
             ('mic', 'Сказал — и записано', 'Нажмите микрофон и скажите «такси вчера 2400 каспи» — сумма, статья, дата и счёт определятся сами. Можно и текстом, одной строкой.'),
             ('qr', 'Чек → статьи за секунду', 'Наведите камеру на QR-код чека — покупки сами разложатся по статьям: продукты отдельно, бытовая химия отдельно.'),
             ('doc', 'Выписка вместо ручного ввода', 'Загрузите PDF-выписку банка — операции внесутся сами, а то, что уже записано, не задвоится. Сейчас Kaspi и Halyk, другие банки на подходе.'),
-            ('spark', 'Слон подскажет', 'Сколько можно тратить до зарплаты и где утекают деньги — без таблиц и формул.'),
+            ('bell', 'Напомнит вечером', 'Если за день ничего не записано — вечером мягко напомнит. Больше ничем не отвлекает.'),
         ],
         'pro_h': 'Если любите порядок — тут есть всё',
         'pro_sub': 'Инструменты как у финансового директора, только для семьи',
@@ -47,6 +48,17 @@ T = {
             ('Мультивалютные карты', 'тенге, доллары и евро на одной карте, курсы Нацбанка'),
             ('Советник', 'пошаговый план: подушка, долги, накопления'),
         ],
+        'adv_h': 'Помощник, который считает за вас',
+        'adv_sub': 'Слон разбирает каждую трату и подсказывает, что делать дальше: отложить, накопить, закрыть долг. Без таблиц и формул.',
+        'adv': [
+            ('Сколько можно тратить до зарплаты', 'с учётом обязательных расходов, платежей по кредитам и денег, отложенных на цели'),
+            ('Где утекают деньги', 'находит мелкие частые траты — кофе, доставку, такси, — которые за год складываются в сотни тысяч'),
+            ('Подушка безопасности', 'считает, сколько нужно именно вам по вашим обязательным расходам, и следит, сколько уже есть'),
+            ('Какой кредит закрыть первым', 'подскажет, где выгоднее погасить досрочно и сколько сэкономите на процентах'),
+            ('Темп месяца', 'заранее предупредит, если тратите быстрее плана, и покажет, сколько можно в день'),
+            ('Пошаговый план', 'увидеть свои деньги → начать копить → защититься → взять долги под контроль'),
+        ],
+        'adv_note': 'Всё считается на телефоне — данные никуда не уходят. Это подсказки для ваших решений, а не финансовая консультация.',
         'priv_h': 'Ваши данные — только ваши',
         'priv': 'Без регистрации, без наших серверов, без рекламы. База лежит на телефоне, копии можно зашифровать паролем, вход — по Face ID. Тёмная тема — тоже есть.',
         'why_h': 'Почему слон',
@@ -109,7 +121,7 @@ T = {
             ('mic', 'Say it — and it’s recorded', 'Tap the mic and say “taxi yesterday 2400 kaspi” — amount, category, date and account are picked up on their own. Or type it in one line.'),
             ('qr', 'Receipt to categories in a second', 'Point the camera at the receipt QR code — purchases sort into categories on their own: groceries here, household goods there.'),
             ('doc', 'Statements instead of typing', 'Upload a bank PDF statement — transactions add themselves, and nothing you already entered gets doubled. Kaspi and Halyk now, more banks on the way.'),
-            ('spark', 'The elephant has tips', 'How much you can spend until payday and where money leaks — no spreadsheets, no formulas.'),
+            ('bell', 'An evening nudge', 'If nothing was recorded that day, it gently reminds you in the evening. Nothing else.'),
         ],
         'pro_h': 'Love being in control? It’s all here',
         'pro_sub': 'Tools a CFO would use, made for a family',
@@ -123,6 +135,17 @@ T = {
             ('Multi-currency cards', 'tenge, dollars and euros on one card, National Bank rates'),
             ('Advisor', 'a step-by-step plan: safety net, debts, savings'),
         ],
+        'adv_h': 'An assistant that does the math for you',
+        'adv_sub': 'The elephant goes through every expense and tells you what to do next: set money aside, save up, pay off a debt. No spreadsheets, no formulas.',
+        'adv': [
+            ('How much you can spend until payday', 'after essential costs, loan payments and money set aside for goals'),
+            ('Where money leaks', 'spots small frequent expenses — coffee, delivery, taxis — that add up to a fortune over a year'),
+            ('Safety cushion', 'works out how much you need based on your essential costs and tracks how much you have'),
+            ('Which loan to pay off first', 'shows where early repayment pays off most and how much interest you’ll save'),
+            ('Monthly pace', 'warns you early if you’re spending faster than planned and shows a daily allowance'),
+            ('A step-by-step plan', 'see your money → start saving → protect yourself → get debt under control'),
+        ],
+        'adv_note': 'Everything is calculated on your phone — your data never leaves it. These are tips for your own decisions, not financial advice.',
         'priv_h': 'Your data is yours',
         'priv': 'No sign-up, no servers of ours, no ads. The database lives on your phone, backups can be password-encrypted, and the app unlocks with Face ID. Dark theme included.',
         'why_h': 'Why an elephant',
@@ -185,7 +208,7 @@ T = {
             ('mic', 'Айттыңыз — жазылды', 'Микрофонды басып, «такси кеше 2400 каспи» деп айтыңыз — сома, санат, күн және шот өздері анықталады. Мәтінмен де болады, бір жолмен.'),
             ('qr', 'Чек → санаттар бір секундта', 'Камераны чектің QR-кодына бағыттаңыз — сатып алулар санаттарға өздері бөлінеді: азық-түлік бөлек, тұрмыстық химия бөлек.'),
             ('doc', 'Қолмен енгізудің орнына үзінді', 'Банктің PDF-үзіндісін жүктеңіз — операциялар өздері енгізіледі, бұрын жазылғандары қайталанбайды. Қазір Kaspi және Halyk, басқа банктер жақында.'),
-            ('spark', 'Піл кеңес береді', 'Жалақыға дейін қанша жұмсауға болады және ақша қайда ағып кетеді — кестесіз, формуласыз.'),
+            ('bell', 'Кешке еске салады', 'Күні бойы ештеңе жазылмаса, кешке ақырын еске салады. Басқа ештеңемен алаңдатпайды.'),
         ],
         'pro_h': 'Тәртіпті ұнатсаңыз — бәрі бар',
         'pro_sub': 'Қаржы директорының құралдары, тек отбасыға арналған',
@@ -199,6 +222,17 @@ T = {
             ('Мультивалюталы карталар', 'бір картада теңге, доллар және еуро, Ұлттық банк бағамдары'),
             ('Кеңесші', 'қадамдық жоспар: қор, қарыздар, жинақ'),
         ],
+        'adv_h': 'Сіз үшін есептейтін көмекші',
+        'adv_sub': 'Піл әр шығынды талдап, әрі қарай не істеу керегін айтады: бөліп қою, жинау, қарызды жабу. Кестесіз, формуласыз.',
+        'adv': [
+            ('Жалақыға дейін қанша жұмсауға болады', 'міндетті шығыстарды, несие төлемдерін және мақсаттарға бөлінген ақшаны ескеріп'),
+            ('Ақша қайда ағып кетеді', 'кофе, жеткізу, такси сияқты ұсақ жиі шығындарды табады — жылына олар жүздеген мыңға жиналады'),
+            ('Қаржы қоры', 'міндетті шығыстарыңыз бойынша сізге қанша керек екенін есептеп, қазір қанша бар екенін бақылайды'),
+            ('Қай несиені бірінші жабу керек', 'мерзімінен бұрын қайсысын өтеген тиімді және пайыздан қанша үнемдейтініңізді көрсетеді'),
+            ('Ай қарқыны', 'жоспардан жылдам жұмсап жатсаңыз, алдын ала ескертіп, күніне қанша болатынын көрсетеді'),
+            ('Қадамдық жоспар', 'ақшаңызды көру → жинай бастау → өзіңізді қорғау → қарызды бақылауға алу'),
+        ],
+        'adv_note': 'Бәрі телефонда есептеледі — деректер ешқайда кетпейді. Бұл өз шешімдеріңізге арналған кеңестер, қаржылық кеңес емес.',
         'priv_h': 'Деректеріңіз — тек сіздікі',
         'priv': 'Тіркеусіз, біздің серверлерсіз, жарнамасыз. База телефонда, көшірмелерді құпиясөзбен шифрлауға болады, кіру — Face ID арқылы. Қараңғы тақырып та бар.',
         'why_h': 'Неге піл',
@@ -305,13 +339,13 @@ def home(lang):
         f'<li><div class="ico">{ICONS[i]}</div><div><h3>{h}</h3><p>{p}</p></div></li>' for i, h, p in t['easy']
     )
     pro = ''.join(f'<li><b>{h}</b> — {p}</li>' for h, p in t['pro'])
+    adv = ''.join(f'<li><b>{h}</b> — {p}</li>' for h, p in t['adv'])
     body = f'''<section class="hero">
   <div>
     <h1>{t['h1']}</h1>
     <p class="lead">{t['lead']}</p>
-    <p class="langline"><span>Қазақша</span><span>Русский</span><span>English</span> {t['langs']}</p>
     <span class="badge"><span><small>{t['badge_small']}</small>{t['badge']}</span></span>
-    <p class="note">{t['note']}</p>
+    <p class="note">{t['note']}<br>{t['langs']}.</p>
   </div>
   <img src="{BASE}assets/elephant-hero.png" alt="" width="380">
 </section>
@@ -325,6 +359,14 @@ def home(lang):
     <img src="{BASE}assets/think.png" alt="" width="96">
     <h2>{t['pro_h']}</h2><p class="sub">{t['pro_sub']}</p>
     <ul class="pro">{pro}</ul>
+  </div>
+</section>
+<section class="card advisor">
+  <img src="{BASE}assets/party.png" alt="" width="150">
+  <div>
+    <h2>{t['adv_h']}</h2><p class="sub">{t['adv_sub']}</p>
+    <ul class="pro">{adv}</ul>
+    <p class="fine">{t['adv_note']}</p>
   </div>
 </section>
 <section class="why priv"><div class="ico">{ICONS['lock']}</div><div><h2>{t['priv_h']}</h2><p>{t['priv']}</p></div></section>

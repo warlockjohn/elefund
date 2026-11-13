@@ -117,3 +117,11 @@ footer a { color: var(--secondary); }
 .pro b { color: var(--text); }
 .priv { display: flex; gap: 16px; align-items: flex-start; }
 @media (max-width: 760px) { .modes { grid-template-columns: 1fr; } }
+
+.advisor { display: grid; grid-template-columns: 170px 1fr; gap: 24px; align-items: start; margin-bottom: 16px; }
+.advisor img { width: 150px; height: auto; }
+.advisor h2 { margin: 0; font-size: 26px; line-height: 1.25; }
+.advisor .sub { color: var(--secondary); margin: 8px 0 16px; font-size: 18px; }
+.fine { color: var(--secondary); font-size: 14px; margin: 14px 0 0; }
+@media (max-width: 760px) { .advisor { grid-template-columns: 1fr; } .advisor img { width: 120px; } }
+.advisor ul { list-style: none; margin: 0; padding: 0; }
