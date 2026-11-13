@@ -22,8 +22,8 @@ T = {
     'ru': {
         'title': 'Elefund — учёт денег, который сходится',
         'desc': 'Учёт личных финансов для iPhone: голосовой ввод, QR-чеки, выписки банков, бюджет и цели. Данные хранятся только на телефоне.',
-        'h1': 'Просто — когда хочется. Глубоко — когда нужно.',
-        'lead': 'Скажите «кофе 1000» — трата записана. Нужен бюджет движения денег, кредиты с процентами и капитал — всё уже внутри. Elefund — учёт денег для iPhone.',
+        'h1': 'Точно знайте, сколько можно потратить до зарплаты',
+        'lead': 'Без ИИ-догадок и ручной рутины: скажите «кофе 1000», отсканируйте чек — Elefund посчитает остальное и подскажет, как отложить и закрыть долги.',
         'badge': 'Скоро в App Store',
         'badge_small': 'для iPhone',
         'note': 'Основное — бесплатно. Pro — по подписке или один раз навсегда.',
@@ -111,8 +111,8 @@ T = {
     'en': {
         'title': 'Elefund — money tracking that adds up',
         'desc': 'Personal finance for iPhone: voice entry, QR receipts, bank statements, budgets and goals. Your data stays on your phone.',
-        'h1': 'Simple when you want it. Deep when you need it.',
-        'lead': 'Say “coffee 1000” — and it’s recorded. Need a cash flow budget, loans with interest and net worth? It’s all inside. Elefund is money tracking for iPhone.',
+        'h1': 'Know exactly how much you can spend until payday',
+        'lead': 'No AI guesswork, no manual chores: say “coffee 1000”, scan a receipt — Elefund does the rest and shows you how to save and pay off debt.',
         'badge': 'Coming to the App Store',
         'badge_small': 'for iPhone',
         'note': 'The basics are free. Pro is a subscription or a one-time purchase.',
@@ -200,8 +200,8 @@ T = {
     'kk': {
         'title': 'Elefund — ақша есебі, ол дәл келеді',
         'desc': 'iPhone-ға арналған жеке қаржы есебі: дауыспен енгізу, QR-чектер, банк үзінділері, бюджет пен мақсаттар. Деректер тек телефонда сақталады.',
-        'h1': 'Қаласаңыз — қарапайым. Қажет болса — терең.',
-        'lead': '«Кофе 1000» деп айтыңыз — шығын жазылды. Ақша қозғалысы бюджеті, пайызы бар несиелер және капитал керек пе — бәрі ішінде бар. Elefund — iPhone-ға арналған ақша есебі.',
+        'h1': 'Жалақыға дейін қанша жұмсауға болатынын нақты біліңіз',
+        'lead': 'ЖИ болжамдарынсыз және қолмен енгізусіз: «кофе 1000» деп айтыңыз, чекті сканерлеңіз — қалғанын Elefund есептеп, қалай жинау және қарызды жабу керегін айтады.',
         'badge': 'Жақында App Store-да',
         'badge_small': 'iPhone үшін',
         'note': 'Негізгісі — тегін. Pro — жазылыммен немесе бір рет мәңгіге.',
