@@ -13,36 +13,44 @@ ICONS = {
     'qr': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 14h3v3M21 14v.01M17 21h4v-4M14 21v-3"/></svg>',
     'doc': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>',
     'mic': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>',
+    'spark': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg>',
     'lock': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
 }
 
 T = {
     'ru': {
         'title': 'Elefund — учёт денег, который сходится',
-        'desc': 'Учёт личных финансов для iPhone: QR-чеки, выписки Kaspi и Halyk, бюджет и цели. Данные хранятся только на телефоне.',
-        'h1': 'Деньги сходятся до тенге',
-        'lead': 'Elefund — учёт личных финансов для iPhone. Чеки по QR, выписки Kaspi и Halyk, бюджет и цели. Всё хранится только на вашем телефоне.',
+        'desc': 'Учёт личных финансов для iPhone: голосовой ввод, QR-чеки, выписки банков, бюджет и цели. Данные хранятся только на телефоне.',
+        'h1': 'Просто — когда хочется. Глубоко — когда нужно.',
+        'lead': 'Скажите «кофе 1000» — трата записана. Нужен бюджет движения денег, кредиты с процентами и капитал — всё уже внутри. Elefund — учёт денег для iPhone.',
         'badge': 'Скоро в App Store',
         'badge_small': 'для iPhone',
         'note': 'Основное — бесплатно. Pro — по подписке или один раз навсегда.',
         'langs': 'На русском, казахском и английском',
-        'features': [
-            ('qr', 'Чек → статьи за секунду', 'Отсканируйте QR на чеке — покупки сами разложатся по статьям: продукты отдельно, бытовая химия отдельно.'),
-            ('doc', 'Выписка вместо ручного ввода', 'Загрузите PDF-выписку Kaspi Gold или Halyk — операции внесутся сами, а то, что уже записано, не задвоится.'),
+        'easy_h': 'Если лень — не напрягайтесь',
+        'easy_sub': 'Записать трату — пара секунд',
+        'easy': [
             ('mic', 'Сказал — и записано', 'Нажмите микрофон и скажите «такси вчера 2400 каспи» — сумма, статья, дата и счёт определятся сами. Можно и текстом, одной строкой.'),
-            ('lock', 'Ваши данные — только ваши', 'Без регистрации, без наших серверов, без рекламы. База лежит на телефоне, копии можно зашифровать паролем.'),
+            ('qr', 'Чек → статьи за секунду', 'Наведите камеру на QR-код чека — покупки сами разложатся по статьям: продукты отдельно, бытовая химия отдельно.'),
+            ('doc', 'Выписка вместо ручного ввода', 'Загрузите PDF-выписку банка — операции внесутся сами, а то, что уже записано, не задвоится. Сейчас Kaspi и Halyk, другие банки на подходе.'),
+            ('spark', 'Слон подскажет', 'Сколько можно тратить до зарплаты и где утекают деньги — без таблиц и формул.'),
         ],
-        'also_h': 'А ещё',
-        'also': [
-            'Бюджет по статьям и движение денег по месяцам',
-            'Цели и конверты для накоплений',
-            'Кредиты и долги',
-            'Советник: пошаговый план — подушка, долги, накопления',
-            'Несколько валют и курсы Нацбанка',
-            'Тёмная тема и вход по Face ID',
+        'pro_h': 'Если любите порядок — тут есть всё',
+        'pro_sub': 'Инструменты как у финансового директора, только для семьи',
+        'pro': [
+            ('Бюджет по статьям (БДР)', 'план на месяц и темп: укладываетесь ли вы в лимиты'),
+            ('Движение денег (БДДС)', 'поступления, выплаты и остаток на конец месяца'),
+            ('Кредиты честно', 'проценты отдельно от тела долга, сверка с банком, досрочное погашение'),
+            ('Капитал', 'активы минус долги, переоценка имущества и валют'),
+            ('Проекты и контрагенты', 'во сколько обошёлся ремонт или поездка'),
+            ('Цели и конверты', 'отложенные деньги прямо на счёте, без лишних переводов'),
+            ('Мультивалютные карты', 'тенге, доллары и евро на одной карте, курсы Нацбанка'),
+            ('Советник', 'пошаговый план: подушка, долги, накопления'),
         ],
+        'priv_h': 'Ваши данные — только ваши',
+        'priv': 'Без регистрации, без наших серверов, без рекламы. База лежит на телефоне, копии можно зашифровать паролем, вход — по Face ID. Тёмная тема — тоже есть.',
         'why_h': 'Почему слон',
-        'why': 'Слоны ничего не забывают. Elefund тоже: каждая трата на своём месте, и в конце месяца остаток в приложении совпадает с банком. Приложение сделано в Алматы человеком, который почти 20 лет занимается финансовыми системами, — сначала для себя.',
+        'why': 'Слоны ничего не забывают. Elefund тоже: каждая трата на своём месте, и в конце месяца остаток в приложении совпадает с банком. Приложение сделал в Алматы разработчик, который почти 20 лет занимается финансовыми системами, — сначала для себя.',
         'nav_privacy': 'Конфиденциальность',
         'nav_support': 'Поддержка',
         'nav_home': 'Главная',
@@ -88,30 +96,37 @@ T = {
     },
     'en': {
         'title': 'Elefund — money tracking that adds up',
-        'desc': 'Personal finance for iPhone: QR receipts, Kaspi and Halyk statements, budgets and goals. Your data stays on your phone.',
-        'h1': 'Every tenge accounted for',
-        'lead': 'Elefund is a personal finance app for iPhone. QR receipts, Kaspi and Halyk statements, budgets and goals. Everything stays on your phone.',
+        'desc': 'Personal finance for iPhone: voice entry, QR receipts, bank statements, budgets and goals. Your data stays on your phone.',
+        'h1': 'Simple when you want it. Deep when you need it.',
+        'lead': 'Say “coffee 1000” — and it’s recorded. Need a cash flow budget, loans with interest and net worth? It’s all inside. Elefund is money tracking for iPhone.',
         'badge': 'Coming to the App Store',
         'badge_small': 'for iPhone',
         'note': 'The basics are free. Pro is a subscription or a one-time purchase.',
         'langs': 'In English, Russian and Kazakh',
-        'features': [
-            ('qr', 'Receipt to categories in a second', 'Scan the QR code on a receipt — purchases sort into categories on their own: groceries here, household goods there.'),
-            ('doc', 'Statements instead of typing', 'Upload a Kaspi Gold or Halyk PDF statement — transactions add themselves, and nothing you already entered gets doubled.'),
+        'easy_h': 'Feeling lazy? No problem',
+        'easy_sub': 'Recording an expense takes seconds',
+        'easy': [
             ('mic', 'Say it — and it’s recorded', 'Tap the mic and say “taxi yesterday 2400 kaspi” — amount, category, date and account are picked up on their own. Or type it in one line.'),
-            ('lock', 'Your data is yours', 'No sign-up, no servers of ours, no ads. The database lives on your phone, and backups can be password-encrypted.'),
+            ('qr', 'Receipt to categories in a second', 'Point the camera at the receipt QR code — purchases sort into categories on their own: groceries here, household goods there.'),
+            ('doc', 'Statements instead of typing', 'Upload a bank PDF statement — transactions add themselves, and nothing you already entered gets doubled. Kaspi and Halyk now, more banks on the way.'),
+            ('spark', 'The elephant has tips', 'How much you can spend until payday and where money leaks — no spreadsheets, no formulas.'),
         ],
-        'also_h': 'Also',
-        'also': [
-            'Category budgets and monthly cash flow',
-            'Goals and envelopes for savings',
-            'Loans and debts',
-            'Advisor: a step-by-step plan — safety net, debts, savings',
-            'Multiple currencies with National Bank rates',
-            'Dark theme and Face ID unlock',
+        'pro_h': 'Love being in control? It’s all here',
+        'pro_sub': 'Tools a CFO would use, made for a family',
+        'pro': [
+            ('Category budget', 'a monthly plan and pace: are you within your limits'),
+            ('Cash flow budget', 'money in, money out and the month-end balance'),
+            ('Honest loans', 'interest separate from principal, bank reconciliation, early repayment'),
+            ('Net worth', 'assets minus debts, revaluation of property and currencies'),
+            ('Projects and payees', 'what the renovation or the trip really cost'),
+            ('Goals and envelopes', 'money set aside right on the account, no extra transfers'),
+            ('Multi-currency cards', 'tenge, dollars and euros on one card, National Bank rates'),
+            ('Advisor', 'a step-by-step plan: safety net, debts, savings'),
         ],
+        'priv_h': 'Your data is yours',
+        'priv': 'No sign-up, no servers of ours, no ads. The database lives on your phone, backups can be password-encrypted, and the app unlocks with Face ID. Dark theme included.',
         'why_h': 'Why an elephant',
-        'why': 'Elephants never forget. Neither does Elefund: every expense in its place, and at the end of the month your balance matches the bank. Made in Almaty by someone who has spent almost 20 years building financial systems — first for himself.',
+        'why': 'Elephants never forget. Neither does Elefund: every expense in its place, and at the end of the month your balance matches the bank. Made in Almaty by a developer who has spent almost 20 years building financial systems — first for himself.',
         'nav_privacy': 'Privacy',
         'nav_support': 'Support',
         'nav_home': 'Home',
@@ -157,30 +172,37 @@ T = {
     },
     'kk': {
         'title': 'Elefund — ақша есебі, ол дәл келеді',
-        'desc': 'iPhone-ға арналған жеке қаржы есебі: QR-чектер, Kaspi және Halyk үзінділері, бюджет пен мақсаттар. Деректер тек телефонда сақталады.',
-        'h1': 'Ақша теңгесіне дейін дәл',
-        'lead': 'Elefund — iPhone-ға арналған жеке қаржы есебі. QR-чектер, Kaspi және Halyk үзінділері, бюджет пен мақсаттар. Барлығы тек сіздің телефоныңызда сақталады.',
+        'desc': 'iPhone-ға арналған жеке қаржы есебі: дауыспен енгізу, QR-чектер, банк үзінділері, бюджет пен мақсаттар. Деректер тек телефонда сақталады.',
+        'h1': 'Қаласаңыз — қарапайым. Қажет болса — терең.',
+        'lead': '«Кофе 1000» деп айтыңыз — шығын жазылды. Ақша қозғалысы бюджеті, пайызы бар несиелер және капитал керек пе — бәрі ішінде бар. Elefund — iPhone-ға арналған ақша есебі.',
         'badge': 'Жақында App Store-да',
         'badge_small': 'iPhone үшін',
         'note': 'Негізгісі — тегін. Pro — жазылыммен немесе бір рет мәңгіге.',
         'langs': 'Қазақ, орыс және ағылшын тілдерінде',
-        'features': [
-            ('qr', 'Чек → санаттар бір секундта', 'Чектегі QR-кодты сканерлеңіз — сатып алулар санаттарға өздері бөлінеді: азық-түлік бөлек, тұрмыстық химия бөлек.'),
-            ('doc', 'Қолмен енгізудің орнына үзінді', 'Kaspi Gold немесе Halyk PDF-үзіндісін жүктеңіз — операциялар өздері енгізіледі, бұрын жазылғандары қайталанбайды.'),
+        'easy_h': 'Ерінсеңіз — қиналмаңыз',
+        'easy_sub': 'Шығынды жазу — бірнеше секунд',
+        'easy': [
             ('mic', 'Айттыңыз — жазылды', 'Микрофонды басып, «такси кеше 2400 каспи» деп айтыңыз — сома, санат, күн және шот өздері анықталады. Мәтінмен де болады, бір жолмен.'),
-            ('lock', 'Деректеріңіз — тек сіздікі', 'Тіркеусіз, біздің серверлерсіз, жарнамасыз. База телефонда, көшірмелерді құпиясөзбен шифрлауға болады.'),
+            ('qr', 'Чек → санаттар бір секундта', 'Камераны чектің QR-кодына бағыттаңыз — сатып алулар санаттарға өздері бөлінеді: азық-түлік бөлек, тұрмыстық химия бөлек.'),
+            ('doc', 'Қолмен енгізудің орнына үзінді', 'Банктің PDF-үзіндісін жүктеңіз — операциялар өздері енгізіледі, бұрын жазылғандары қайталанбайды. Қазір Kaspi және Halyk, басқа банктер жақында.'),
+            ('spark', 'Піл кеңес береді', 'Жалақыға дейін қанша жұмсауға болады және ақша қайда ағып кетеді — кестесіз, формуласыз.'),
         ],
-        'also_h': 'Тағы',
-        'also': [
-            'Санаттар бойынша бюджет және айлық ақша қозғалысы',
-            'Жинаққа арналған мақсаттар мен конверттер',
-            'Несиелер мен қарыздар',
-            'Кеңесші: қадамдық жоспар — қор, қарыздар, жинақ',
-            'Бірнеше валюта және Ұлттық банк бағамдары',
-            'Қараңғы тақырып және Face ID арқылы кіру',
+        'pro_h': 'Тәртіпті ұнатсаңыз — бәрі бар',
+        'pro_sub': 'Қаржы директорының құралдары, тек отбасыға арналған',
+        'pro': [
+            ('Санаттар бойынша бюджет', 'айлық жоспар және қарқын: лимиттерге сыйып жатырсыз ба'),
+            ('Ақша қозғалысы бюджеті', 'түсімдер, төлемдер және ай соңындағы қалдық'),
+            ('Несиелердің адал есебі', 'пайыз негізгі қарыздан бөлек, банкпен салыстыру, мерзімінен бұрын өтеу'),
+            ('Капитал', 'активтер минус қарыздар, мүлік пен валютаны қайта бағалау'),
+            ('Жобалар мен контрагенттер', 'жөндеу немесе сапар шын мәнінде қаншаға түсті'),
+            ('Мақсаттар мен конверттер', 'бөлінген ақша шоттың өзінде, артық аударымсыз'),
+            ('Мультивалюталы карталар', 'бір картада теңге, доллар және еуро, Ұлттық банк бағамдары'),
+            ('Кеңесші', 'қадамдық жоспар: қор, қарыздар, жинақ'),
         ],
+        'priv_h': 'Деректеріңіз — тек сіздікі',
+        'priv': 'Тіркеусіз, біздің серверлерсіз, жарнамасыз. База телефонда, көшірмелерді құпиясөзбен шифрлауға болады, кіру — Face ID арқылы. Қараңғы тақырып та бар.',
         'why_h': 'Неге піл',
-        'why': 'Пілдер ештеңені ұмытпайды. Elefund та: әр шығын өз орнында, ай соңында қосымшадағы қалдық банкпен сәйкес келеді. Қосымшаны Алматыда қаржы жүйелерімен 20 жылға жуық айналысқан адам жасады — алдымен өзі үшін.',
+        'why': 'Пілдер ештеңені ұмытпайды. Elefund та: әр шығын өз орнында, ай соңында қосымшадағы қалдық банкпен сәйкес келеді. Қосымшаны Алматыда қаржы жүйелерімен 20 жылға жуық айналысқан әзірлеуші жасады — алдымен өзі үшін.',
         'nav_privacy': 'Құпиялылық',
         'nav_support': 'Қолдау',
         'nav_home': 'Басты бет',
@@ -279,11 +301,10 @@ def page(lang, name, title, desc, body):
 
 def home(lang):
     t = T[lang]
-    feats = ''.join(
-        f'<div class="card"><div class="ico" style="color:var(--accent)">{ICONS[i]}</div><h3>{h}</h3><p>{p}</p></div>'
-        for i, h, p in t['features']
+    easy = ''.join(
+        f'<li><div class="ico">{ICONS[i]}</div><div><h3>{h}</h3><p>{p}</p></div></li>' for i, h, p in t['easy']
     )
-    also = ''.join(f'<li>{x}</li>' for x in t['also'])
+    pro = ''.join(f'<li><b>{h}</b> — {p}</li>' for h, p in t['pro'])
     body = f'''<section class="hero">
   <div>
     <h1>{t['h1']}</h1>
@@ -294,11 +315,19 @@ def home(lang):
   </div>
   <img src="{BASE}assets/elephant-hero.png" alt="" width="380">
 </section>
-<section class="features">{feats}</section>
-<section class="also">
-  <img src="{BASE}assets/think.png" alt="" width="220">
-  <div><h2>{t['also_h']}</h2><ul>{also}</ul></div>
+<section class="modes">
+  <div class="card mode">
+    <img src="{BASE}assets/wave.png" alt="" width="96">
+    <h2>{t['easy_h']}</h2><p class="sub">{t['easy_sub']}</p>
+    <ul class="easy">{easy}</ul>
+  </div>
+  <div class="card mode">
+    <img src="{BASE}assets/think.png" alt="" width="96">
+    <h2>{t['pro_h']}</h2><p class="sub">{t['pro_sub']}</p>
+    <ul class="pro">{pro}</ul>
+  </div>
 </section>
+<section class="why priv"><div class="ico">{ICONS['lock']}</div><div><h2>{t['priv_h']}</h2><p>{t['priv']}</p></div></section>
 <section class="why"><h2>{t['why_h']}</h2><p>{t['why']}</p></section>'''
     return page(lang, 'index', t['title'], t['desc'], body)
 
