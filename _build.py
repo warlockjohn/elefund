@@ -12,6 +12,7 @@ LANG_LABEL = {'ru': 'Рус', 'en': 'Eng', 'kk': 'Қаз'}
 ICONS = {
     'qr': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 14h3v3M21 14v.01M17 21h4v-4M14 21v-3"/></svg>',
     'doc': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>',
+    'mic': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>',
     'lock': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
 }
 
@@ -24,20 +25,21 @@ T = {
         'badge': 'Скоро в App Store',
         'badge_small': 'для iPhone',
         'note': 'Основное — бесплатно. Pro — по подписке или один раз навсегда.',
+        'langs': 'На русском, казахском и английском',
         'features': [
             ('qr', 'Чек → статьи за секунду', 'Отсканируйте QR на чеке — покупки сами разложатся по статьям: продукты отдельно, бытовая химия отдельно.'),
             ('doc', 'Выписка вместо ручного ввода', 'Загрузите PDF-выписку Kaspi Gold или Halyk — операции внесутся сами, а то, что уже записано, не задвоится.'),
+            ('mic', 'Сказал — и записано', 'Нажмите микрофон и скажите «такси вчера 2400 каспи» — сумма, статья, дата и счёт определятся сами. Можно и текстом, одной строкой.'),
             ('lock', 'Ваши данные — только ваши', 'Без регистрации, без наших серверов, без рекламы. База лежит на телефоне, копии можно зашифровать паролем.'),
         ],
         'also_h': 'А ещё',
         'also': [
-            'Быстрый ввод одной строкой',
             'Бюджет по статьям и движение денег по месяцам',
             'Цели и конверты для накоплений',
             'Кредиты и долги',
             'Советник: пошаговый план — подушка, долги, накопления',
             'Несколько валют и курсы Нацбанка',
-            'Тёмная тема, Face ID, русский, казахский и английский',
+            'Тёмная тема и вход по Face ID',
         ],
         'why_h': 'Почему слон',
         'why': 'Слоны ничего не забывают. Elefund тоже: каждая трата на своём месте, и в конце месяца остаток в приложении совпадает с банком. Приложение сделано в Алматы человеком, который почти 20 лет занимается финансовыми системами, — сначала для себя.',
@@ -92,20 +94,21 @@ T = {
         'badge': 'Coming to the App Store',
         'badge_small': 'for iPhone',
         'note': 'The basics are free. Pro is a subscription or a one-time purchase.',
+        'langs': 'In English, Russian and Kazakh',
         'features': [
             ('qr', 'Receipt to categories in a second', 'Scan the QR code on a receipt — purchases sort into categories on their own: groceries here, household goods there.'),
             ('doc', 'Statements instead of typing', 'Upload a Kaspi Gold or Halyk PDF statement — transactions add themselves, and nothing you already entered gets doubled.'),
+            ('mic', 'Say it — and it’s recorded', 'Tap the mic and say “taxi yesterday 2400 kaspi” — amount, category, date and account are picked up on their own. Or type it in one line.'),
             ('lock', 'Your data is yours', 'No sign-up, no servers of ours, no ads. The database lives on your phone, and backups can be password-encrypted.'),
         ],
         'also_h': 'Also',
         'also': [
-            'Quick entry in a single line',
             'Category budgets and monthly cash flow',
             'Goals and envelopes for savings',
             'Loans and debts',
             'Advisor: a step-by-step plan — safety net, debts, savings',
             'Multiple currencies with National Bank rates',
-            'Dark theme, Face ID, English, Russian and Kazakh',
+            'Dark theme and Face ID unlock',
         ],
         'why_h': 'Why an elephant',
         'why': 'Elephants never forget. Neither does Elefund: every expense in its place, and at the end of the month your balance matches the bank. Made in Almaty by someone who has spent almost 20 years building financial systems — first for himself.',
@@ -160,20 +163,21 @@ T = {
         'badge': 'Жақында App Store-да',
         'badge_small': 'iPhone үшін',
         'note': 'Негізгісі — тегін. Pro — жазылыммен немесе бір рет мәңгіге.',
+        'langs': 'Қазақ, орыс және ағылшын тілдерінде',
         'features': [
             ('qr', 'Чек → санаттар бір секундта', 'Чектегі QR-кодты сканерлеңіз — сатып алулар санаттарға өздері бөлінеді: азық-түлік бөлек, тұрмыстық химия бөлек.'),
             ('doc', 'Қолмен енгізудің орнына үзінді', 'Kaspi Gold немесе Halyk PDF-үзіндісін жүктеңіз — операциялар өздері енгізіледі, бұрын жазылғандары қайталанбайды.'),
+            ('mic', 'Айттыңыз — жазылды', 'Микрофонды басып, «такси кеше 2400 каспи» деп айтыңыз — сома, санат, күн және шот өздері анықталады. Мәтінмен де болады, бір жолмен.'),
             ('lock', 'Деректеріңіз — тек сіздікі', 'Тіркеусіз, біздің серверлерсіз, жарнамасыз. База телефонда, көшірмелерді құпиясөзбен шифрлауға болады.'),
         ],
         'also_h': 'Тағы',
         'also': [
-            'Бір жолмен жылдам енгізу',
             'Санаттар бойынша бюджет және айлық ақша қозғалысы',
             'Жинаққа арналған мақсаттар мен конверттер',
             'Несиелер мен қарыздар',
             'Кеңесші: қадамдық жоспар — қор, қарыздар, жинақ',
             'Бірнеше валюта және Ұлттық банк бағамдары',
-            'Қараңғы тақырып, Face ID, қазақ, орыс және ағылшын тілдері',
+            'Қараңғы тақырып және Face ID арқылы кіру',
         ],
         'why_h': 'Неге піл',
         'why': 'Пілдер ештеңені ұмытпайды. Elefund та: әр шығын өз орнында, ай соңында қосымшадағы қалдық банкпен сәйкес келеді. Қосымшаны Алматыда қаржы жүйелерімен 20 жылға жуық айналысқан адам жасады — алдымен өзі үшін.',
@@ -284,6 +288,7 @@ def home(lang):
   <div>
     <h1>{t['h1']}</h1>
     <p class="lead">{t['lead']}</p>
+    <p class="langline"><span>Қазақша</span><span>Русский</span><span>English</span> {t['langs']}</p>
     <span class="badge"><span><small>{t['badge_small']}</small>{t['badge']}</span></span>
     <p class="note">{t['note']}</p>
   </div>
