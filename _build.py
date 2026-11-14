@@ -5,6 +5,7 @@ import html
 import os
 
 EMAIL = 'elefund.app@gmail.com'
+BETA = 'https://testflight.apple.com/join/JZeBmddz'  # публичная ссылка TestFlight
 UPDATED = {'ru': '13 ноября 2026', 'en': 'November 13, 2026', 'kk': '2026 жылғы 13 қараша'}
 LANGS = ['ru', 'en', 'kk']
 LANG_LABEL = {'ru': 'Рус', 'en': 'Eng', 'kk': 'Қаз'}
@@ -24,8 +25,9 @@ T = {
         'desc': 'Учёт личных финансов для iPhone: голосовой ввод, QR-чеки, выписки банков, бюджет и цели. Данные хранятся только на телефоне.',
         'h1': 'Точно знайте, сколько можно потратить до зарплаты',
         'lead': 'Без ИИ-догадок и ручной рутины: скажите «кофе 1000», отсканируйте чек — Elefund посчитает остальное и подскажет, как отложить и закрыть долги.',
-        'badge': 'Скоро в App Store',
-        'badge_small': 'для iPhone',
+        'badge': 'Стать тестером',
+        'badge_small': 'Бета в TestFlight · для iPhone',
+        'beta_note': 'Тестерам — Pro бесплатно навсегда.',
         'note': 'Основное — бесплатно. Pro — по подписке или один раз навсегда.',
         'langs': 'На русском, казахском и английском',
         'easy_h': 'Если лень — не напрягайтесь',
@@ -96,6 +98,7 @@ T = {
         'support_title': 'Поддержка',
         'support_lead': 'Ответы на частые вопросы. Не нашли свой — напишите, ответим.',
         'faq': [
+            ('Как установить бету?', f'<ol><li>Установите приложение <b>TestFlight</b> из App Store.</li><li>Откройте на iPhone <a href="{BETA}">ссылку на бету</a> и нажмите «Принять», затем «Установить».</li><li>Обновления приходят сами. Тестерам — Pro бесплатно навсегда.</li></ol>'),
             ('Где хранятся мои данные?', '<p>Только на вашем iPhone, внутри приложения. Ни регистрации, ни облака разработчика нет — поэтому важно делать резервные копии.</p>'),
             ('Как перенести данные на новый телефон?', '<ol><li>На старом телефоне: «Ещё» → «Резервная копия» → «Сохранить копию» и отправьте файл себе (AirDrop, Файлы, мессенджер).</li><li>На новом: установите Elefund, откройте «Ещё» → «Резервная копия» → «Восстановить из файла» и выберите копию.</li></ol>'),
             ('Я забыл пароль от копии', '<p>К сожалению, открыть зашифрованную копию без пароля невозможно — ни вам, ни нам. Так работает шифрование. Если приложение ещё стоит на телефоне, данные в нём на месте: снимите или смените пароль в разделе «Резервная копия» и сохраните новую копию.</p>'),
@@ -113,8 +116,9 @@ T = {
         'desc': 'Personal finance for iPhone: voice entry, QR receipts, bank statements, budgets and goals. Your data stays on your phone.',
         'h1': 'Know exactly how much you can spend until payday',
         'lead': 'No AI guesswork, no manual chores: say “coffee 1000”, scan a receipt — Elefund does the rest and shows you how to save and pay off debt.',
-        'badge': 'Coming to the App Store',
-        'badge_small': 'for iPhone',
+        'badge': 'Join the beta',
+        'badge_small': 'TestFlight · for iPhone',
+        'beta_note': 'Beta testers get Pro free forever.',
         'note': 'The basics are free. Pro is a subscription or a one-time purchase.',
         'langs': 'In English, Russian and Kazakh',
         'easy_h': 'Feeling lazy? No problem',
@@ -185,6 +189,7 @@ T = {
         'support_title': 'Support',
         'support_lead': 'Answers to common questions. Didn’t find yours? Write to us.',
         'faq': [
+            ('How do I install the beta?', f'<ol><li>Install the <b>TestFlight</b> app from the App Store.</li><li>Open the <a href="{BETA}">beta link</a> on your iPhone and tap Accept, then Install.</li><li>Updates arrive automatically. Beta testers get Pro free forever.</li></ol>'),
             ('Where is my data stored?', '<p>Only on your iPhone, inside the app. There is no sign-up and no developer cloud — which is why backups matter.</p>'),
             ('How do I move my data to a new phone?', '<ol><li>On the old phone: More → Backup → Save copy and send the file to yourself (AirDrop, Files, a messenger).</li><li>On the new one: install Elefund, open More → Backup → Restore from file and pick the backup.</li></ol>'),
             ('I forgot my backup password', '<p>Unfortunately, an encrypted backup cannot be opened without its password — not by you, not by us. That is how encryption works. If the app is still on your phone, your data is intact: remove or change the password in Backup and save a new backup.</p>'),
@@ -202,8 +207,9 @@ T = {
         'desc': 'iPhone-ға арналған жеке қаржы есебі: дауыспен енгізу, QR-чектер, банк үзінділері, бюджет пен мақсаттар. Деректер тек телефонда сақталады.',
         'h1': 'Жалақыға дейін қанша жұмсауға болатынын нақты біліңіз',
         'lead': 'ЖИ болжамдарынсыз және қолмен енгізусіз: «кофе 1000» деп айтыңыз, чекті сканерлеңіз — қалғанын Elefund есептеп, қалай жинау және қарызды жабу керегін айтады.',
-        'badge': 'Жақында App Store-да',
-        'badge_small': 'iPhone үшін',
+        'badge': 'Тестер болу',
+        'badge_small': 'TestFlight бетасы · iPhone үшін',
+        'beta_note': 'Тестерлерге Pro — мәңгі тегін.',
         'note': 'Негізгісі — тегін. Pro — жазылыммен немесе бір рет мәңгіге.',
         'langs': 'Қазақ, орыс және ағылшын тілдерінде',
         'easy_h': 'Ерінсеңіз — қиналмаңыз',
@@ -274,6 +280,7 @@ T = {
         'support_title': 'Қолдау',
         'support_lead': 'Жиі қойылатын сұрақтарға жауаптар. Өз сұрағыңызды таппасаңыз — жазыңыз.',
         'faq': [
+            ('Бетаны қалай орнатамын?', f'<ol><li>App Store-дан <b>TestFlight</b> қосымшасын орнатыңыз.</li><li>iPhone-да <a href="{BETA}">бета сілтемесін</a> ашып, «Қабылдау», сосын «Орнату» басыңыз.</li><li>Жаңартулар өздігінен келеді. Тестерлерге Pro — мәңгі тегін.</li></ol>'),
             ('Деректерім қайда сақталады?', '<p>Тек iPhone-ыңызда, қосымшаның ішінде. Тіркеу де, әзірлеушінің бұлты да жоқ — сондықтан сақтық көшірме жасау маңызды.</p>'),
             ('Деректерді жаңа телефонға қалай көшіремін?', '<ol><li>Ескі телефонда: «Тағы» → «Сақтық көшірме» → «Көшірмені сақтау», сосын файлды өзіңізге жіберіңіз (AirDrop, Файлдар, мессенджер).</li><li>Жаңасында: Elefund орнатып, «Тағы» → «Сақтық көшірме» → «Файлдан қалпына келтіру» ашып, көшірмені таңдаңыз.</li></ol>'),
             ('Көшірменің құпиясөзін ұмыттым', '<p>Өкінішке қарай, шифрланған көшірмені құпиясөзсіз ашу мүмкін емес — сізге де, бізге де. Шифрлау осылай жұмыс істейді. Қосымша телефонда тұрса, деректер орнында: «Сақтық көшірме» бөлімінде құпиясөзді алып тастаңыз немесе өзгертіңіз де, жаңа көшірме сақтаңыз.</p>'),
@@ -350,8 +357,8 @@ def home(lang):
   <div>
     <h1>{t['h1']}</h1>
     <p class="lead">{t['lead']}</p>
-    <span class="badge"><span><small>{t['badge_small']}</small>{t['badge']}</span></span>
-    <p class="note">{t['note']}<br>{t['langs']}.</p>
+    <a class="badge" href="{BETA}"><span><small>{t['badge_small']}</small>{t['badge']}</span></a>
+    <p class="note"><b>{t['beta_note']}</b><br>{t['note']}<br>{t['langs']}.</p>
   </div>
   <img src="{BASE}assets/elephant-hero.png" alt="" width="380">
 </section>

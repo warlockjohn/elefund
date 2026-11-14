@@ -50,6 +50,7 @@ header.top { display: flex; align-items: center; justify-content: space-between;
   background: var(--text); color: var(--bg);
   padding: 12px 22px; border-radius: 14px; font-weight: 600; text-decoration: none;
 }
+.badge:hover { opacity: 0.88; }
 .badge small { display: block; font-weight: 400; font-size: 12px; opacity: 0.8; }
 .note { color: var(--secondary); font-size: 15px; margin-top: 12px; }
 
